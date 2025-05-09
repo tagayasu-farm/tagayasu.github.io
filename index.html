@@ -32,16 +32,46 @@ font-size: 4em;
   }
   
   nav a {
-    margin: 0 15px;
+
     color: white;
     text-decoration: none;
 font-size: 1.2em;  /* ← 20%文字大きくなる */
+}
+ 
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
 
-  }
+.main-nav > a,
+.main-nav > .dropdown-group > a,
+.main-nav > .dropdown-group > span {
+  color: white;
+  font-size: 1.4em;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-.lettuce-link {
-    color: #90ee90; /* 明るい緑で区別 */
-  }
+.dropdown-group {
+  text-align: center;
+}
+
+.sub-items {
+  margin-top: 5px;
+}
+
+.sub-items div {
+  color: white;
+  font-size: 1em;
+  margin: 3px 0;
+}
+
+
+
 
 
   main {
@@ -74,8 +104,8 @@ font-size: 1.2em;  /* ← 20%文字大きくなる */
 
 .catch {
   font-size: 2em;
-  margin-top: 0.5em;
-  margin-bottom: 5em;
+  margin-top: 0.1em;
+  margin-bottom: 0.05em;
   color: #ffd700;
   text-shadow: 1px 1px 2px black;
   font-weight: bold;
@@ -102,45 +132,47 @@ font-size: 1.2em;  /* ← 20%文字大きくなる */
 
 
 
-</style>
- 
-</head>
 <body>
 
 <header>
   <h1>タガヤスファーム</h1>
  <p class="catch">タガヤスファームの水耕の力で世界に新たな実りを</p>
-  <nav>
-    <a href="company.html">施設概要</a>
-     <div class="dropdown-group">
+<br>星の綺麗な町（福井県大飯郡おおい町名田庄）のタガヤスファームで栽培した
+<br>安心・安全な美味しいレタスを世界へ届け豊かな未来を育むことを目指します
+
+ <nav class="main-nav">
+  <a href="company.html">施設概要</a>
+
+  <div class="dropdown-group">
     <a href="strength.html">タガヤスファームの強み</a>
     <div class="sub-items">
-      <div>高い技術力</div>
-      <div>菌数の少なさ</div>
-      <div>栄養価の高さ</div>
+      <div>★高い技術力</div>
+      <div>★菌数の少なさ</div>
+      <div>★栄養価の高さ</div>
     </div>
   </div>
 
   <div class="dropdown-group">
-    <span>代表商品紹介</span>
+    <a href="#syoukai">代表商品紹介</a>
     <div class="sub-items">
-      <div>クリスピー</div>
-      <div>ロメイン</div>
-      <div>リーフ</div>
-      <div>レッドリーフ</div>
-      <div>ターサイ</div>
+      <div>★クリスピー</div>
+      <div>★ロメイン</div>
+      <div>★リーフ</div>
+      <div>★レッドリーフ</div>
+      <div>★ターサイ</div>
     </div>
   </div>
 </nav>
-      </nav>
+
 </header>
 
 <main>
  
   
 
-  <section id="kurisupi">
-<img src="https://tagayasu-farm.github.io/syouhinsyoukai.jpg"  width="100%" height="100%">
+  <section id="syoukai">
+<img src="https://tagayasu-farm.github.io/syouhinsyoukai1.jpg"  width="100%" height="100%"><br>
+<img src="https://tagayasu-farm.github.io/syouhinsyoukai2.jpg"  width="100%" height="100%">
    
   <section class="sns">
     <h2>公式Instagram</h2>
