@@ -1,39 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>Tagayasu Farm Strengths</title>
+  <title>タガヤスファームの強み</title>
   <style>
-    .image-container {
+    body {
+      margin: 0;
+      padding: 0;
       text-align: center;
-      max-width: 100%;
     }
-
-    .responsive-img {
-      width: 100%;
-      max-width: 720px;
+    .map-img {
+      width: 720px;  /* 元画像の幅を固定 */
       height: auto;
+      display: block;
+      margin: 0 auto;
     }
   </style>
 </head>
 <body>
 
-<div class="image-container">
-  <img src="tuyomi.jpg" usemap="#tagayasu-map" alt="Tagayasu Strengths" class="responsive-img">
-</div>
+<img src="tuyomi.jpg" usemap="#tagayasu-map" alt="Tagayasu Strengths" class="map-img" id="farm-map">
 
 <map name="tagayasu-map">
-  <!-- 01: 高い技術力 -->
   <area shape="rect" coords="50,200,230,400" href="strength1.html" alt="Technology">
-
-  <!-- 02: 菌数の少なさ -->
   <area shape="rect" coords="250,200,450,400" href="strength2.html" alt="Hygiene">
-
-  <!-- 03: 栄養価の高さ -->
   <area shape="rect" coords="470,200,670,400" href="strength3.html" alt="Nutrition">
 </map>
 
-<!-- image map resizer (CDN読み込み) -->
+<!-- image map resizer -->
 <script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
 <script>
   window.onload = function() {
