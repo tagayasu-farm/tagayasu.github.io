@@ -8,32 +8,33 @@
       margin: 0;
       padding: 0;
       text-align: center;
+      font-family: sans-serif;
+      background-color: #ffffff;
     }
-    .map-img {
-      width: 720px;  /* 元画像の幅を固定 */
+    .strength-img {
+      max-width: 100%;
       height: auto;
-      display: block;
-      margin: 0 auto;
+      margin: 20px 0;
     }
   </style>
 </head>
 <body>
 
-<img src="tuyomi.jpg" usemap="#tagayasu-map" alt="Tagayasu Strengths" class="map-img" id="farm-map">
+<!-- タイトル画像 -->
+<img src="tuyomi.jpg" alt="タガヤスファームの強み" class="strength-img">
 
-<map name="tagayasu-map">
-  <area shape="rect" coords="50,200,230,400" href="strength1.html" alt="Technology">
-  <area shape="rect" coords="250,200,450,400" href="strength2.html" alt="Hygiene">
-  <area shape="rect" coords="470,200,670,400" href="strength3.html" alt="Nutrition">
-</map>
+<!-- 各強みへのリンク画像 -->
+<a href="strength1.html">
+  <img src="tuyomi1.jpg" alt="Strength 1: 高い技術力" class="strength-img">
+</a>
 
-<!-- image map resizer -->
-<script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
-<script>
-  window.onload = function() {
-    imageMapResize();
-  };
-</script>
+<a href="strength2.html">
+  <img src="tuyomi2.jpg" alt="Strength 2: 菌数の少なさ" class="strength-img">
+</a>
+
+<a href="strength3.html">
+  <img src="tuyomi3.jpg" alt="Strength 3: 栄養価の高さ" class="strength-img">
+</a>
 
 </body>
 </html>
