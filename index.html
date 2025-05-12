@@ -2,109 +2,57 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <title>株式会社タガヤス</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>タガヤスファーム</title>
-  
-    <style>
-  body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f5f5f5;
-    color: #333;
-  }
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      font-family: "Helvetica Neue", sans-serif;
+      background-color: #f4f4f4;
+    }
 
-  header {
-    background: url('https://tagayasu-farm.github.io/main0.jpg') center/cover no-repeat;
-    color: white;
-    text-align: center;
-    padding: 15em 0 2em;
-    position: relative;
-  }
+    .main-image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
 
-header h1 {
-font-family: 'メイリオ', Meiryo, sans-serif;
-    color: white;
-    text-shadow: 1px 1px 2px black;
-font-size: 4em;      
-  margin-bottom: 0.3em; 
-  }
-  
-  nav a {
+    .nav-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 30px 20px;
+    }
 
-    color: white;
-    text-decoration: none;
-font-size: 1.2em;  /* ← 20%文字大きくなる */
-}
- 
-.main-nav {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
+    .nav-button {
+      display: inline-block;
+      width: 80%;
+      max-width: 300px;
+      padding: 15px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s, transform 0.2s;
+    }
 
-.main-nav > a,
-.main-nav > .dropdown-group > a,
-.main-nav > .dropdown-group > span {
-  color: white;
-  font-size: 1.4em;
-  text-decoration: none;
-  font-weight: bold;
-}
+    .nav-button:hover {
+      background-color: #45a049;
+      transform: translateY(-2px);
+    }
 
-.dropdown-group {
-  text-align: center;
-}
-
-.sub-items {
-  margin-top: 5px;
-}
-
-.sub-items div {
-  color: white;
-  font-size: 1em;
-  margin: 3px 0;
-}
-
-.main-image {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-
-
-  main {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
-    background: white;
-  }
-
-  section {
-    margin-bottom: 30px;
-  }
-
-  h1, h2 {
-    color: #2c3e50;
-  }
-
-  .map iframe {
-    width: 100%;
-    height: 300px;
-    border: none;
-  }
-
-  .sns a {
-    margin-right: 10px;
-    text-decoration: none;
-    color: #2c3e50;
-  }
-
-
+    @media (min-width: 768px) {
+      .nav-buttons {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
 
 
     .back-button {
@@ -129,30 +77,15 @@ font-size: 1.2em;  /* ← 20%文字大きくなる */
 <body>
 
 <header>
- <img src="https://tagayasu-farm.github.io/main.jpg" alt="タガヤスファーム メイン画像" class="main-image">
-  <nav class="main-nav">
-  <a href="company.html">施設概要</a>
+<!-- 上部画像 -->
+<img src="main.png" alt="タガヤスファーム トップ画像" class="main-image">
 
-  <div class="dropdown-group">
-    <a href="strength.html">タガヤスファームの強み</a>
-    <div class="sub-items">
-      <div>★高い技術力</div>
-      <div>★菌数の少なさ</div>
-      <div>★栄養価の高さ</div>
-    </div>
-  </div>
-
-  <div class="dropdown-group">
-    <a href="#syoukai">代表商品紹介</a>
-    <div class="sub-items">
-      <div>★クリスピー</div>
-      <div>★ロメイン</div>
-      <div>★リーフ</div>
-      <div>★レッドリーフ</div>
-      <div>★ターサイ</div>
-    </div>
-  </div>
-</nav>
+<!-- ナビゲーションボタン -->
+<div class="nav-buttons">
+  <a href="company.html" class="nav-button">施設概要</a>
+  <a href="strength.html" class="nav-button">タガヤスファームの強み</a>
+  <a href="#syoukai" class="nav-button">代表商品紹介</a>
+</div>
 
 </header>
 
@@ -164,17 +97,7 @@ font-size: 1.2em;  /* ← 20%文字大きくなる */
 <img src="https://tagayasu-farm.github.io/syouhinsyoukai1.jpg"  width="100%" height="100%"><br>
 <img src="https://tagayasu-farm.github.io/syouhinsyoukai2.jpg"  width="100%" height="100%">
    
-  <section class="sns">
-    <h2>公式Instagram</h2>
-    <p>
-      <img src="insuta.png" alt="Instagram QRコード" style="width:150px; margin-top:10px;">
-<a href="https://www.instagram.com/tagayasu_farm" target="_blank">Instagramを見る</a>
-    
- 
-</p>
-
-  </section>
-
+  
   </main>
 
 <footer>
