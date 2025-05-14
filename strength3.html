@@ -2,55 +2,77 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>栄養価の高さ | タガヤスファームの強み</title>
+  <title>栄養価の高さ - タガヤスファーム</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
       font-family: "メイリオ", sans-serif;
+      margin: 0;
       padding: 20px;
-      background: #fff;
+      background: #ffffff;
       color: #333;
-      max-width: 800px;
-      margin: auto;
+      text-align: center;
     }
-    h1 { color: #2980b9; }
-    a { display: inline-block; margin-top: 20px; color: #2980b9; text-decoration: none; }
 
-  .back-button {
+    h1 {
+      color: #d35400;
+      margin-bottom: 30px;
+    }
+
+    .nutrition-image {
+      max-width: 90%;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      margin-top: 40px;
+    }
+
+    .nav-button {
       display: inline-block;
-      background-color: #2c3e50;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 16px;
       font-weight: bold;
+      background-color: #e67e22;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s, transform 0.2s;
     }
-    .back-button:hover {
-      background-color: #34495e;
+
+    .nav-button:hover {
+      background-color: #ca6f1e;
+      transform: translateY(-2px);
     }
 
-
-
-
+    @media (min-width: 768px) {
+      .button-group {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
   </style>
 </head>
 <body>
 
-<h1>栄養価の高さ</h1>
+<h1>3. 栄養価の高さ</h1>
 
-<div class="section">
-  <h2>① ビタミンA</h2>
-  <p>健康な視力や免疫力を保つのに重要なビタミンAを豊富に含んでいます。</p>
+<!-- 栄養価の高さに関する画像3枚 -->
+<img src="nutrition1.jpg" alt="栄養豊富なレタス" class="nutrition-image">
+<img src="nutrition2.jpg" alt="栄養成分表" class="nutrition-image">
+
+<!-- ボタン -->
+<div class="button-group">
+  <a href="strongpoint.html" class="nav-button">タガヤスファームの強みに戻る</a>
+  <a href="index.html" class="nav-button">TOPに戻る</a>
 </div>
-
-<div class="section">
-  <h2>② β-カロテン</h2>
-  <p>抗酸化作用があり、体の老化や生活習慣病の予防にも効果が期待されます。</p>
-</div>
-
-<a href="strongpoint.html" class="back-button">← タガヤスファームの強みに戻る</a>
-<br>
-<a href="index.html" class="back-button">TOPに戻る</a>
 
 </body>
 </html>
