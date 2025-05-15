@@ -30,7 +30,7 @@
     .button-group {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 15px;
       align-items: center;
       margin-top: 40px;
     }
@@ -40,7 +40,6 @@
       padding: 15px 30px;
       font-size: 16px;
       font-weight: bold;
-      background-color: #4CAF50;
       color: white;
       text-decoration: none;
       border-radius: 8px;
@@ -48,14 +47,47 @@
     }
 
     .nav-button:hover {
-      background-color: #45a049;
       transform: translateY(-2px);
+    }
+
+    /* 個別色設定 */
+    .btn-top {
+      background-color: #2c3e50;
+    }
+
+    .btn-top:hover {
+      background-color: #34495e;
+    }
+
+    .btn-strong {
+      background-color: #27ae60;
+    }
+
+    .btn-strong:hover {
+      background-color: #1e8449;
+    }
+
+    .btn-bacteria {
+      background-color: #e67e22;
+    }
+
+    .btn-bacteria:hover {
+      background-color: #ca6f1e;
+    }
+
+    .btn-nutrition {
+      background-color: #9b59b6;
+    }
+
+    .btn-nutrition:hover {
+      background-color: #884ea0;
     }
 
     @media (min-width: 768px) {
       .button-group {
         flex-direction: row;
         justify-content: center;
+        flex-wrap: wrap;
       }
     }
   </style>
@@ -64,15 +96,15 @@
 
 <h1>1. 高い技術力</h1>
 
-<!-- 技術に関する画像3枚 -->
 <img src="tech1.jpg" alt="環境コントロール" class="tech-image">
 <img src="tech2.jpg" alt="液肥の分析" class="tech-image">
 <img src="tech3.jpg" alt="自動作業システム" class="tech-image">
 
-<!-- ボタン -->
 <div class="button-group">
-  <a href="strongpoint.html" class="nav-button">タガヤスファームの強みに戻る</a>
-  <a href="index.html" class="nav-button">TOPに戻る</a>
+  <a href="index.html" class="nav-button btn-top">TOPに戻る</a>
+  <a href="strength.html" class="nav-button btn-strong">タガヤスファームの強みに戻る</a>
+  <a href="strength2.html" class="nav-button btn-bacteria">菌数の少なさ</a>
+  <a href="strength3.html" class="nav-button btn-nutrition">栄養価の高さ</a>
 </div>
 
 </body>
