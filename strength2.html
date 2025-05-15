@@ -15,7 +15,7 @@
     }
 
     h1 {
-      color: #27ae60;
+      color: #27ae60; /* 緑色の見出し */
       margin-bottom: 30px;
     }
 
@@ -40,21 +40,34 @@
       padding: 15px 30px;
       font-size: 16px;
       font-weight: bold;
-      background-color: #4CAF50;
       color: white;
       text-decoration: none;
       border-radius: 8px;
       transition: background-color 0.3s, transform 0.2s;
     }
 
-    .nav-button:hover {
+    .green-button {
+      background-color: #4CAF50;
+    }
+
+    .green-button:hover {
       background-color: #45a049;
+      transform: translateY(-2px);
+    }
+
+    .blue-button {
+      background-color: #2980b9;
+    }
+
+    .blue-button:hover {
+      background-color: #2471a3;
       transform: translateY(-2px);
     }
 
     @media (min-width: 768px) {
       .button-group {
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
       }
     }
@@ -64,14 +77,16 @@
 
 <h1>2. 菌数の少なさ</h1>
 
-<!-- 菌数の少なさに関する画像3枚 -->
+<!-- 菌数の少なさに関する画像 -->
 <img src="clean1.jpg" alt="無農薬栽培" class="clean-image">
 <img src="clean2.jpg" alt="衛生管理" class="clean-image">
 
 <!-- ボタン -->
 <div class="button-group">
-  <a href="strongpoint.html" class="nav-button">タガヤスファームの強みに戻る</a>
-  <a href="index.html" class="nav-button">TOPに戻る</a>
+  <a href="strongpoint.html" class="nav-button green-button">タガヤスファームの強みに戻る</a>
+  <a href="index.html" class="nav-button blue-button">TOPに戻る</a>
+  <a href="tech.html" class="nav-button blue-button">高い技術力</a>
+  <a href="nutrition.html" class="nav-button blue-button">栄養価の高さ</a>
 </div>
 
 </body>

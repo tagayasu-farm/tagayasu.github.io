@@ -15,7 +15,7 @@
     }
 
     h1 {
-      color: #d35400;
+      color: #d35400; /* オレンジ系 */
       margin-bottom: 30px;
     }
 
@@ -40,21 +40,34 @@
       padding: 15px 30px;
       font-size: 16px;
       font-weight: bold;
-      background-color: #e67e22;
       color: white;
       text-decoration: none;
       border-radius: 8px;
       transition: background-color 0.3s, transform 0.2s;
     }
 
-    .nav-button:hover {
-      background-color: #ca6f1e;
+    .green-button {
+      background-color: #4CAF50;
+    }
+
+    .green-button:hover {
+      background-color: #45a049;
+      transform: translateY(-2px);
+    }
+
+    .blue-button {
+      background-color: #2980b9;
+    }
+
+    .blue-button:hover {
+      background-color: #2471a3;
       transform: translateY(-2px);
     }
 
     @media (min-width: 768px) {
       .button-group {
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
       }
     }
@@ -64,15 +77,12 @@
 
 <h1>3. 栄養価の高さ</h1>
 
-<!-- 栄養価の高さに関する画像3枚 -->
+<!-- 栄養価の高さに関する画像 -->
 <img src="nutrition1.jpg" alt="栄養豊富なレタス" class="nutrition-image">
 <img src="nutrition2.jpg" alt="栄養成分表" class="nutrition-image">
 
 <!-- ボタン -->
 <div class="button-group">
-  <a href="strongpoint.html" class="nav-button">タガヤスファームの強みに戻る</a>
-  <a href="index.html" class="nav-button">TOPに戻る</a>
-</div>
-
-</body>
-</html>
+  <a href="strongpoint.html" class="nav-button green-button">タガヤスファームの強みに戻る</a>
+  <a href="index.html" class="nav-button blue-button">TOPに戻る</a>
+  <a href="tech.html" class="nav-button blue-button">高い技術力</a>
