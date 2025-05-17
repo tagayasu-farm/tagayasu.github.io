@@ -34,9 +34,8 @@
       width: 280px;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       text-align: center;
-      min-height: 460px; /* 高さを明示的に統一 */
+      height: 500px; /* 高さを固定 */
     }
 
     .topic-card img {
@@ -50,34 +49,33 @@
       font-size: 18px;
       font-weight: bold;
       margin: 10px 0;
-      min-height: 2.5em; /* タイトル高さ固定 */
+      min-height: 2.5em; /* 高さを固定 */
     }
 
-.topic-text {
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 60px; /* 高さ調整 */
-  padding: 10px 0;
-}
+    .topic-text {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 0;
+      min-height: 80px; /* ここで本文高さ調整 */
+    }
 
-.topic-text p {
-  font-size: 14px;
-  color: #666;
-  margin: 0;
-  line-height: 1.4;
-  text-align: center;
-}
-
+    .topic-text p {
+      font-size: 14px;
+      color: #666;
+      margin: 0;
+      line-height: 1.4;
+      text-align: center;
+    }
 
     .detail-buttons {
-      margin-top: auto;
+      margin-top: 20px;
     }
 
     .detail-button {
       display: inline-block;
-      margin: 8px 4px 0 4px;
+      margin: 4px;
       padding: 10px 20px;
       background-color: #27ae60;
       color: white;
@@ -115,7 +113,7 @@
 
 <div class="topics">
 
-   <!-- カード1 -->
+  <!-- カード1 -->
   <div class="topic-card">
     <img src="news2.jpg" alt="トピック画像1">
     <h2>紹介されました</h2>
@@ -149,3 +147,4 @@
 
 </body>
 </html>
+
