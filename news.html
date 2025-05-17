@@ -53,6 +53,25 @@
       min-height: 2.5em; /* タイトル高さ固定 */
     }
 
+.topic-text {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px; /* 高さ調整 */
+  padding: 10px 0;
+}
+
+.topic-text p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  line-height: 1.4;
+  text-align: center;
+}
+
+
+
     .topic-card p {
       font-size: 14px;
       color: #666;
@@ -104,19 +123,25 @@
 
 <div class="topics">
 
+   <!-- カード1 -->
   <div class="topic-card">
     <img src="news2.jpg" alt="トピック画像1">
     <h2>紹介されました</h2>
-    <p>BSテレ東<br>「ミライをひらく〜サスティナビリティの知恵」で紹介されました</p>
+    <div class="topic-text">
+      <p>BSテレ東「ミライをひらく〜サスティナビリティの知恵」で紹介されました</p>
+    </div>
     <div class="detail-buttons">
       <a href="news2.mp4" class="detail-button">詳しくはこちら</a>
     </div>
   </div>
 
+  <!-- カード2 -->
   <div class="topic-card">
     <img src="news1.png" alt="トピック画像2">
     <h2>取材していただきました</h2>
-    <p>福井放送「おじゃまっテレ ワイド&ニュース」に取材していただきました</p>
+    <div class="topic-text">
+      <p>福井放送「おじゃまっテレ ワイド&ニュース」に取材していただきました</p>
+    </div>
     <div class="detail-buttons">
       <a href="news1-1.mp4" class="detail-button">詳しくはこちら１</a>
       <a href="news1-2.mp4" class="detail-button">詳しくはこちら２</a>
