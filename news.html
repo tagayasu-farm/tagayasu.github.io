@@ -33,6 +33,11 @@
       padding: 20px;
       width: 280px;
       text-align: center;
+ display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 360px; /* ←高さ調整 */
+}
     }
 
     .topic-card img {
@@ -108,8 +113,11 @@ transform: translateY(-2px);
     <img src="news1.png" alt="トピック画像2">
     <h2>取材していただきました</h2>
     <p>福井放送「おじゃまっテレ ワイド&ニュース」に取材していただきました</p>
-    <a href="news1-1.mp4" class="detail-button">詳しくはこちら１</a>
-<a href="news1-2.mp4" class="detail-button">詳しくはこちら２</a>
+   <div style="margin-top: auto;">
+    <a href="news1-1.mp4" class="detail-button">詳しくはこちら１</a><br>
+    <a href="news1-2.mp4" class="detail-button">詳しくはこちら２</a>
+  </div>
+</div>
   </div>
 
 </div> <!-- ← .topics の閉じタグ -->
