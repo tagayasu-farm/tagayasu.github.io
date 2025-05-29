@@ -88,26 +88,31 @@ height: 600px; /* ← これが無いと高さが0で見えない場合がある
   </header>
 
   <main>
-<div style="text-align: center;">
+  <div style="position: relative; text-align: center;">
+
+    <!-- 注文案内テキスト -->
     <p>ネットでのご注文は食べチョク・ポケットマルシェでどうぞ</p>
 
-    <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 20px;">
-      <!-- 食べチョク -->
+    <!-- 食べチョク & ポケマル 中央配置 -->
+    <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
       <a href="https://www.tabechoku.com/products?keyword=タガヤスファーム" target="_blank">
         <img src="tabechoku.png" alt="食べチョク" style="height: 160px;">
       </a>
-
-      <!-- ポケマル -->
       <a href="https://poke-m.com/products?words=タガヤスファーム" target="_blank">
         <img src="pokemaru.jpg" alt="ポケマル" style="height: 160px;">
       </a>
-
-      <!-- インスタグラム（右に表示） -->
-      <a href="https://www.instagram.com/tagayasu_farm" target="_blank">
-        <img src="instagram.png" alt="インスタ" style="height: 100px;">
-      </a>
     </div>
+
+    <!-- インスタグラム（右端に固定） -->
+    <a href="https://www.instagram.com/tagayasu_farm" target="_blank" 
+       style="position: absolute; top: 0; right: 20px;">
+      <img src="instagram.png" alt="インスタ" style="height: 160px;">
+    </a>
   </div>
+
+
+
+
 
 <section id="syoukai">
  <img src="https://tagayasu-farm.github.io/syouhinsyoukai1.jpg" width="100%" height="100%"><br>
