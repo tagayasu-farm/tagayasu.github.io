@@ -73,7 +73,62 @@ top: 0;
   .slideshow-container {
     height: 60vh;
   }
-}
+
+
+
+  .shop-icon,
+    .instagram-icon {
+      height: 90px;
+    }
+
+    .instagram-link {
+      right: 10px;
+      top: 10px;
+    }
+  }
+
+  
+  .order-area {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .order-text {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+
+  .order-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
+  .shop-icon {
+    height: 120px;
+    max-width: 100%;
+  }
+
+  .instagram-link {
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+
+  .instagram-icon {
+    height: 120px;
+  }
+
+
+
+
+
+
+
+
   </style>
 </head>
 
@@ -102,22 +157,24 @@ top: 0;
     <p>ネットでのご注文は食べチョク・ポケットマルシェでどうぞ</p>
 
     <!-- 食べチョク & ポケマル 中央配置 -->
-    <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
-      <a href="https://www.tabechoku.com/products?keyword=タガヤスファーム" target="_blank">
-        <img src="tabechoku.png" alt="食べチョク" style="height: 160px;">
-      </a>
-      <a href="https://poke-m.com/products?words=タガヤスファーム" target="_blank">
-        <img src="pokemaru.jpg" alt="ポケマル" style="height: 160px;">
-      </a>
-    </div>
-
-    <!-- インスタグラム（右端に固定） -->
-    <a href="https://www.instagram.com/tagayasu_farm" target="_blank" 
-       style="position: absolute; top: 0; right: 20px;">
-      <img src="instagram.png" alt="インスタ" style="height: 160px;">
+   <div class="order-area">
+  <p class="order-text">ネットでのご注文は食べチョク・ポケットマルシェでどうぞ</p>
+  
+  <!-- 食べチョク・ポケマル -->
+  <div class="order-links">
+    <a href="https://www.tabechoku.com/products?keyword=タガヤスファーム" target="_blank">
+      <img src="tabechoku.png" alt="食べチョク" class="shop-icon">
+    </a>
+    <a href="https://poke-m.com/products?words=タガヤスファーム" target="_blank">
+      <img src="pokemaru.jpg" alt="ポケマル" class="shop-icon">
     </a>
   </div>
 
+  <!-- インスタ（右上固定） -->
+  <a href="https://www.instagram.com/tagayasu_farm" target="_blank" class="instagram-link">
+    <img src="instagram.png" alt="インスタ" class="instagram-icon">
+  </a>
+</div>
 
 
 
