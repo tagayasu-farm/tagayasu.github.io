@@ -2,15 +2,10 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-
-<title>タガヤスファーム｜タガヤスの水耕の力で世界に新たな実りを</title>
-  <meta name="description" content="星の綺麗な町（福井県おおい町名田庄）から、水耕栽培で育てた安心安全・高品質な美味しいレタスをお届けします。
-高い技術力・低菌数・高栄養価が私たちの強みです。">
-
-
-  <link rel="icon" href="favicon.png" type="image/png">
+  <title>タガヤスファーム｜タガヤスの水耕の力で世界に新たな実りを</title>
+  <meta name="description" content="星の綺麗な町（福井県おおい町名田庄）から、水耕栽培で育てた安心安全・高品質な美味しいレタスをお届けします。高い技術力・低菌数・高栄養価が私たちの強みです。">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link rel="icon" href="favicon.png" type="image/png">
 
   <style>
     body {
@@ -20,8 +15,25 @@
       font-family: "Helvetica Neue", sans-serif;
       background-color: #f4f4f4;
     }
-
-   
+    .slideshow-container {
+      position: relative;
+      width: 100%;
+      max-height: 600px;
+      overflow: hidden;
+    }
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      max-height: 600px;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    .slide.active {
+      opacity: 1;
+      z-index: 1;
+    }
 
     .nav-buttons {
       display: flex;
@@ -30,7 +42,6 @@
       gap: 20px;
       padding: 30px 20px;
     }
-
     .nav-button {
       display: inline-block;
       width: 80%;
@@ -44,7 +55,6 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       transition: background-color 0.3s, transform 0.2s;
     }
-
     .nav-button:hover {
       background-color: #ffa500;
       transform: translateY(-2px);
@@ -56,162 +66,76 @@
         justify-content: center;
       }
     }
-
-
-    .back-button {
-      display: inline-block;
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      margin-top: 30px;
-      font-weight: bold;
-    }
-    .back-button:hover {
-      background-color: #ffa500;
-    }
-.store-link {
-  display: inline-block;
-  margin: 0 20px;
-  padding: 12px 24px;
-  background-color: #4CAF50;
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  border-radius: 10px;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.store-link:hover {
-  background-color: #ffa500;
-  transform: translateY(-2px);
-}
-
-.slideshow-container {
-  position: relative;
-  width: 100%;
-  max-height: 600px; /* 必要に応じて調整 */
-  overflow: hidden;
-}
-
-.slide {
-  position: absolute;
-  width: 100%;
-  height: auto;
-max-height: 600px; /* 画面高すぎ問題を防止 */
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.slide.active {
-  opacity: 1;
-  z-index: 1;
-}
-
-
-
-
   </style>
 </head>
 
-
-
-
 <body>
+  <header>
+    <div class="slideshow-container">
+      <img src="main.png" class="slide active" alt="スライド1">
+      <img src="top2.jpg" class="slide" alt="スライド2">
+      <img src="top3.jpg" class="slide" alt="スライド3">
+      <img src="top4.jpg" class="slide" alt="スライド4">
+    </div>
 
-<header>
-<!-- 上部画像スライドショー -->
+    <div class="nav-buttons">
+      <a href="company.html" class="nav-button">施設概要</a>
+      <a href="strength.html" class="nav-button">タガヤスファームの強み</a>
+      <a href="#syoukai" class="nav-button">代表商品紹介</a>
+      <a href="news.html" class="nav-button">NEWS</a>
+      <a href="shops.html" class="nav-button">取扱店舗</a>
+    </div>
+  </header>
 
-<div class="slideshow-container">
-  <img src="main.png" class="slide active" alt="スライド1">
-  <img src="top2.jpg" class="slide" alt="スライド2">
-  <img src="top3.jpg" class="slide" alt="スライド3">
-  <img src="top4.jpg" class="slide" alt="スライド4">
-</div>
+  <main>
+    <section id="syoukai">
+      <div style="margin: 50px 0;">
+        ネットでのご注文は食べチョクポケットマルシェでどうぞ<br>
+        <a href="https://www.tabechoku.com/products?keyword=タガヤスファーム" target="_blank">
+          <img src="tabechoku.png" alt="食べチョク" style="height: 160px; margin: 0 20px;">
+        </a>
+        <a href="https://poke-m.com/products?words=タガヤスファーム" target="_blank">
+          <img src="pokemaru.jpg" alt="ポケマル" style="height: 160px; margin: 0 20px;">
+        </a>
+        <br>
+        <a href="https://www.instagram.com/tagayasu_farm" target="_blank">
+          <img src="instagram.png" alt="インスタ" width="150">
+        </a>
+      </div>
 
-
-
-
-<!-- ナビゲーションボタン -->
-<div class="nav-buttons">
-  <a href="company.html" class="nav-button">施設概要</a>
-  <a href="strength.html" class="nav-button">タガヤスファームの強み</a>
-  <a href="#syoukai" class="nav-button">代表商品紹介</a>
-<a href="news.html" class="nav-button">NEWS</a>
- <a href="shops.html" class="nav-button">取扱店舗</a> <!-- ←これを追加 -->
-</div>
-
-</header>
-
-<main>
- 
-  
-
-  <section id="syoukai">
-
-<!-- 食べチョク・ポケマル リンク付きロゴ -->
- <div style="margin: 50px 0; text-align: center;">
-ネットでのご注文は食べチョクポケットマルシェでどうぞ<br>
-  <a href="https://www.tabechoku.com/products?keyword=%E3%82%BF%E3%82%AC%E3%83%A4%E3%82%B9%E3%83%95%E3%82%A1%E3%83%BC%E3%83%A0" target="_blank">
-    <img src="tabechoku.png" alt="食べチョク" style="height: 160px; margin: 0 20px;">
-  </a>
-  <a href="https://poke-m.com/products?words=%E3%82%BF%E3%82%AC%E3%83%A4%E3%82%B9%E3%83%95%E3%82%A1%E3%83%BC%E3%83%A0" target="_blank">
-    <img src="pokemaru.jpg" alt="ポケマル" style="height: 160px; margin: 0 20px;">
-  </a>
-
-
-<a href="https://www.instagram.com/tagayasu_farm" target="_blank"><img src="instagram.png" alt="インスタ" width="150">
-</a>
-</div>
-
-
-  <!-- 商品紹介画像 -->
-<img src="https://tagayasu-farm.github.io/syouhinsyoukai1.jpg"  width="100%" height="100%"><br>
-<img src="https://tagayasu-farm.github.io/syouhinsyoukai2.jpg"  width="100%" height="100%">
-   
-  
+      <img src="https://tagayasu-farm.github.io/syouhinsyoukai1.jpg" width="100%" height="100%"><br>
+      <img src="https://tagayasu-farm.github.io/syouhinsyoukai2.jpg" width="100%" height="100%">
+    </section>
   </main>
 
-<footer>
-<div style="text-align: center;">
-  <p>&copy;Copyright  2025 タガヤスファーム</p></div>
-</footer>
+  <footer>
+    <div style="text-align: center;">
+      <p>&copy;Copyright 2025 タガヤスファーム</p>
+    </div>
+  </footer>
 
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const slides = document.querySelectorAll('.slide');
+      let currentSlide = 0;
 
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.remove('active');
+        });
+        slides[index].classList.add('active');
+      }
 
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+        const delay = (currentSlide === 0) ? 3000 : 2000;
+        setTimeout(nextSlide, delay);
+      }
 
-<script>
-  const slides = document.querySelectorAll('.slide');
-  let currentSlide = 0;
-
-  function showSlide(index) {
-    slides.forEach((slide, i) => {
-      slide.classList.remove('active');
+      showSlide(currentSlide);
+      setTimeout(nextSlide, 3000);
     });
-    slides[index].classList.add('active');
-  }
-
-  function nextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
-
-    // main.png のときだけ 3秒、それ以外は 2秒
-    const delay = (currentSlide === 0) ? 3000 : 2000;
-    setTimeout(nextSlide, delay);
-  }
-
-// （初回に main.png を表示）
-  showSlide(currentSlide);
-
-
-  // 最初のスライド表示開始
-  setTimeout(nextSlide, 3000);
-</script>
-
-
-
-
-
+  </script>
 </body>
 </html>
