@@ -194,13 +194,17 @@
     currentSlide = (currentSlide + 1) % slides.length;
     showSlide(currentSlide);
 
-    // main.png のときだけ 4秒、それ以外は 2秒
-    const delay = (currentSlide === 0) ? 4000 : 2000;
+    // main.png のときだけ 3秒、それ以外は 2秒
+    const delay = (currentSlide === 0) ? 3000 : 2000;
     setTimeout(nextSlide, delay);
   }
 
+// （初回に main.png を表示）
+  showSlide(currentSlide);
+
+
   // 最初のスライド表示開始
-  setTimeout(nextSlide, 5000);
+  setTimeout(nextSlide, 3000);
 </script>
 
 
