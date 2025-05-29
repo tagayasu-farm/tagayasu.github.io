@@ -66,7 +66,24 @@ top: 0;
       transform: translateY(-2px);
     }
 
+/* InstagramのPC用位置：右上に固定 */
+.instagram-link {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+.instagram-icon {
+  height: 160px;
+}
+
+
+
+
     @media (max-width: 767px) {
+
+
 .nav-buttons {
     flex-direction: column; /* モバイルでは縦並び */
   }
@@ -118,15 +135,19 @@ top: 0;
     max-width: 100%;
   }
 
-  .instagram-link {
-    position: absolute;
-    top: 0;
-    right: 20px;
+ .instagram-link {
+    position: static;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
   }
 
   .instagram-icon {
-    height: 120px;
+    height: 100px;
   }
+}
+
+
 
 
 
