@@ -66,21 +66,21 @@ top: 0;
       transform: translateY(-2px);
     }
 
-/* InstagramのPC用位置：右上に固定 */
+/* InstagramのPC用位置：右に固定 */
 .instagram-link {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 2;
+  top: 0;
+  right: -180px;
+  z-index: 1;
 }
 
 .instagram-icon {
-  height: 160px;
+  height: 120px;
 }
 
 
 
-
+/* モバイル対応 */
     @media (max-width: 767px) {
 
 
@@ -104,11 +104,7 @@ top: 0;
       height: 90px;
     }
 
-    .instagram-link {
-      right: 10px;
-      top: 10px;
-    }
-  }
+  
 
   
   .order-area {
@@ -135,6 +131,7 @@ top: 0;
     max-width: 100%;
   }
 
+ /* 👇 モバイル専用 Instagram位置指定 */
  .instagram-link {
     position: static;
     display: flex;
