@@ -21,12 +21,7 @@
       background-color: #f4f4f4;
     }
 
-    .main-image {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
+   
 
     .nav-buttons {
       display: flex;
@@ -93,6 +88,28 @@
   transform: translateY(-2px);
 }
 
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  max-height: 600px; /* 必要に応じて調整 */
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+
+
 
   </style>
 </head>
@@ -103,8 +120,17 @@
 <body>
 
 <header>
-<!-- 上部画像 -->
-<img src="main.png" alt="タガヤスファーム トップ画像" class="main-image">
+<!-- 上部画像スライドショー -->
+
+<div class="slideshow-container">
+  <img src="main.png" class="slide active" alt="スライド1">
+  <img src="top2.jpg" class="slide" alt="スライド2">
+  <img src="top3.jpg" class="slide" alt="スライド3">
+  <img src="top4.jpg" class="slide" alt="スライド4">
+</div>
+
+
+
 
 <!-- ナビゲーションボタン -->
 <div class="nav-buttons">
@@ -146,6 +172,37 @@
 <div style="text-align: center;">
   <p>&copy;Copyright  2025 タガヤスファーム</p></div>
 </footer>
+
+
+
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+    });
+    slides[index].classList.add('active');
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+
+    // main.png のときだけ 4秒、それ以外は 2秒
+    const delay = (currentSlide === 0) ? 4000 : 2000;
+    setTimeout(nextSlide, delay);
+  }
+
+  // 最初のスライド表示開始
+  setTimeout(nextSlide, 5000);
+</script>
+
+
+
+
 
 </body>
 </html>
